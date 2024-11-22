@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     font-family: Arial, sans-serif;
     color: #fff;
@@ -25,7 +27,7 @@ header {
     z-index: 1000;
     border-bottom: 1px solid #444;
 }
-
+ 
 header h1 {
     font-size: 45px;
     font-weight: bold;
@@ -51,7 +53,6 @@ nav ul li a {
 nav ul li a:hover {
     font-weight: 800;
     color: #9b5de5;
-    transition: 0.2s ease;
 }
 
 @media (max-width: 1150px) {
@@ -72,15 +73,14 @@ nav ul li a:hover {
     header h1 {
         font-size: 35px;
         font-weight: bold;
-        margin-left: 50px;
+    }
+    header {
+        justify-content: flex-end;
     }
 }
 
 /* ----------------------------------- */
 
-main {
-    padding-top: 50px;
-}
 
 section {
     display: flex;
@@ -141,7 +141,7 @@ section {
 }
 
 .photos {
-    max-width: 400px;
+    max-width: 300px;
 }
 
 .cursor {
@@ -173,7 +173,8 @@ section {
     }
 
     .photos {
-        max-width: 450px;
+        max-width: 300px;
+        padding-bottom: 50px;
     }
 }
 
@@ -189,6 +190,24 @@ section {
 
     .intro .content p {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .photos {
+        max-width: 250px;
+    }
+
+    .intro .content h2 {
+        font-size: 30px;
+    }
+
+    .intro .content .role {
+        font-size: 25px;
+    }
+
+    .intro .content p {
+        font-size: 15px;
     }
 }
 /* ----------------------------------- */
@@ -285,12 +304,38 @@ section {
     }
 
     .about .content {
-        padding: 50px;/
+        padding: 20px;
     }
 
     .about img {
         width: 500px;
         height: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about .content h2{
+        font-size: 30px;
+    }
+
+    .about .content p{
+        font-size: 15px;
+    }
+
+    .about .content li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .about img {
+        width: 250px;
+        height: 250px;
     }
 }
 
@@ -394,6 +439,47 @@ section {
     opacity: 1;
 }
 
+@media (max-width: 700px) {
+    .box_projetos {
+        width: 450px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .projects .content h2 {
+        font-size: 30px;
+    }
+
+    .box_projetos {
+        width: 350px;
+    } 
+    
+    .box_projetos h3{
+        font-size: 20px;
+    }    
+
+    .img_project, .img_project img {
+        height: 200px;
+    }
+
+    .box_projetos p {
+        font-size: 15px;
+    }
+
+    .github-icon {
+        width: 70px !important;
+        height: 70px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .box_projetos {
+        width: 280px;
+    }    
+}
+
+
 
 /* ----------------------------------- */
 
@@ -434,6 +520,18 @@ section {
     transform: scale(1.2); /* Aumenta um pouco o ícone ao passar o mouse */
   }
 
+  @media (max-width: 500px) {
+    .contato .content h2 {
+        font-size: 30px;
+    }  
+    
+    .contato .content p {
+        font-size: 18px;
+    }   
+
+}
+
+
 /* ----------------------------------- */
 
 .motion {
@@ -441,6 +539,7 @@ section {
     transform: translateY(20px); 
     animation: fadeInMoveUp 1s forwards; 
 }
+
 @keyframes fadeInMoveUp {
     0% {
         opacity: 0;
