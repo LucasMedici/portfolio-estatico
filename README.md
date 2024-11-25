@@ -3,5 +3,4 @@
 
 [Acessar Portfolio](https://lucasmedici.vercel.app) <br>
 <br>
-<img src="/portfolio/public/images/Home_portfolio.png" alt="Página principal do portfolio"> <br>
-<br>
+![image](https://github.com/user-attachments/assets/7240d214-6652-4c31-b501-e466f953eaec)
